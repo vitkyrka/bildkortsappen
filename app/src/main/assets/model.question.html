@@ -1,0 +1,31 @@
+<script type="text/javascript">
+var images = {{Images}};
+var sentences = {{Sentences}};
+
+function getRandomInt(min, max) {
+	return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function insert(array, callback) {
+    var idx = getRandomInt(0, array.length);
+
+    callback(array[idx]);
+    document.write('<p>');
+
+    if (array.length > 1) {
+        idx = (idx + 1) % array.length;
+        callback(array[idx]);
+        document.write('<p>');
+    }
+}
+
+if (images.length) {
+    // The < is separated to avoid getting caught in the regexp used in
+    // com.ichi2.libanki.Media.escapeImages()
+    insert(images, function(s) { document.write('<' + 'img src="' + s + '"/>'); });
+}
+
+if (sentences.length) {
+    insert(sentences, function(s) { document.write(s); });
+}
+</script>

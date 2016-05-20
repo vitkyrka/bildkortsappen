@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Bildkortsappen</string>
+    <string name="action_create">Skapa</string>
+    <string name="title_activity_card">Bildkort</string>
+    <string name="pos_noun">Substantiv</string>
+    <string name="pos_adjective">Adjektiv</string>
+    <string name="pos_verb">Verb</string>
+    <string name="pos_preposition">Preposition</string>
+    <string name="pos_unknown">Okänd</string>
+    <string name="pos_none">Bokstavlig matchning</string>
+    <string name="preferred_pos">Föredragen ordklass</string>
+    <string name="add_card">Skapa kort</string>
+    <string name="word">Ord</string>
+    <string name="sentences">Exempel</string>
+    <string name="images">Bilder</string>
+    <string name="definition">Definition</string>
+    <string name="failed_add_card">Det gick inte att skapa kortet</string>
+    <string name="card_added">Kortet har skapats</string>
+    <string name="anki_needed">AnkiDroid behövs</string>
+    <string name="anki_needed_long">Bildkortsappen behöver AnkiDroid.  Installera appen \"AnkiDroid flashcards\" från Play-butiken och ge Bildkortsappen de efterfrågade rättigheterna.</string>
+</resources>
