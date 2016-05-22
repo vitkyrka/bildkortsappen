@@ -290,7 +290,11 @@ public class SentenceFragment extends ListFragment {
         ListView listView = getListView();
         SparseBooleanArray items = listView.getCheckedItemPositions();
 
-        for (int i = 0; i < items.size(); i++) {
+        if (items == null) {
+            return selected;
+        }
+
+        for (int i = 0; i < mSentences.size(); i++) {
             if (!items.get(i)) {
                 continue;
             }
